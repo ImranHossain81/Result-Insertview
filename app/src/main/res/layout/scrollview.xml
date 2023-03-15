@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="6dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txrent_rules"
+        android:layout_width="204dp"
+        android:layout_height="24dp"
+        android:layout_margin="2dp"
+        android:layout_marginStart="4dp"
+        android:text="বাসাভাড়া পোস্ট তালিকা :"
+        android:textColor="@color/teal_700"
+        android:textSize="16dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:id="@+id/text_onw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="13dp"
+        android:text="পোস্ট করছেন *"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txrent_rules"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="4dp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="12dp"
+        app:cardCornerRadius="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txrent_rules"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="80dp">
+
+        <ToggleButton
+            android:id="@+id/btn_bariola"
+            android:layout_width="80dp"
+            android:layout_height="27dp"
+            android:background="#1E6E6B71"
+            android:textOff="বাড়িওয়ালা"
+            android:textOn="বাড়িওয়ালা" />
+
+        <ToggleButton
+            android:id="@+id/btn_varatia"
+            android:layout_width="80dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="85dp"
+            android:background="#1E6E6B71"
+            android:textOff="ভাড়াটিয়া"
+            android:textOn="ভাড়াটিয়া" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:text="আপনি কি ভাড়া দিতে চান *"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        android:layout_marginLeft="4dp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+        <ToggleButton
+            android:id="@+id/toggle_bachlor"
+            android:layout_width="80dp"
+            android:layout_height="26dp"
+            android:background="#1E6E6B71"
+            android:textOff="ব্যাচেলর"
+            android:textOn="ব্যাচেলর"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/floor_text" />
+
+        <ToggleButton
+            android:id="@+id/btsublat_vara"
+            android:layout_width="100dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="86dp"
+            android:background="#1E6E6B71"
+            android:textOff="সাবলেট ভাড়া"
+            android:textOn="সাবলেট ভাড়া" />
+
+        <ToggleButton
+            android:id="@+id/btset_vara"
+            android:layout_width="80dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="192dp"
+            android:background="#1E6E6B71"
+            android:textOff="সিট ভাড়া"
+            android:textOn="সিট ভাড়া" />
+
+        <ToggleButton
+            android:id="@+id/btflat_vara"
+            android:layout_width="82dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="277dp"
+            android:background="#1E6E6B71"
+            android:textOff="ফ্লাট ভাড়া"
+            android:textOn="ফ্লাট ভাড়া" />
+
+        <ToggleButton
+            android:id="@+id/btfamily_vara"
+            android:layout_width="78dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="33dp"
+            android:background="#1E6E6B71"
+            android:textOff="ফ্যামিলি"
+            android:textOn="ফ্যামিলি" />
+
+        <ToggleButton
+            android:id="@+id/btsmoll_family"
+            android:layout_width="92dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="84dp"
+            android:layout_marginTop="33dp"
+            android:background="#1E6E6B71"
+            android:textOff="ছোট ফ্যামিলি"
+            android:textOn="ছোট ফ্যামিলি" />
+
+        <ToggleButton
+            android:id="@+id/btonly_boystu"
+            android:layout_width="80dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="182dp"
+            android:layout_marginTop="33dp"
+            android:background="#1E6E6B71"
+            android:textOff="শুধুমাত্র ছাত্র"
+            android:textOn="শুধুমাত্র ছাত্র" />
+
+        <ToggleButton
+            android:id="@+id/btonly_gilstu"
+            android:layout_width="90dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="268dp"
+            android:layout_marginTop="33dp"
+            android:background="#1E6E6B71"
+            android:textOff="শুধুমাত্র ছাত্রী"
+            android:textOn="শুধুমাত্র ছাত্রী" />
+
+        <ToggleButton
+            android:id="@+id/btboy_job"
+            android:layout_width="133dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="65dp"
+            android:background="#1E6E6B71"
+            android:textOff=" পুরুষ চাকরিজীবী"
+            android:textOn=" পুরুষ চাকরিজীবী" />
+
+        <ToggleButton
+            android:id="@+id/btgirl_job"
+            android:layout_width="123dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="138dp"
+            android:layout_marginTop="65dp"
+            android:background="#1E6E6B71"
+            android:textOff="মহিলা চাকরিজীবী"
+            android:textOn="মহিলা চাকরিজীবী" />
+
+        <ToggleButton
+            android:id="@+id/btgarage_vara"
+            android:layout_width="92dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="265dp"
+            android:layout_marginTop="65dp"
+            android:background="#1E6E6B71"
+            android:textOff="গ্যারেজ ভাড়া "
+            android:textOn="গ্যারেজ ভাড়া " />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:text="বাসায় থাকার ধারণক্ষমতা *"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="বেড রুম *"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        android:layout_marginLeft="8dp" />
+
+    <Spinner
+        android:id="@+id/spi_badroom"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="108dp"
+        android:layout_marginRight="8dp">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="ওয়াশ রুম *"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        android:layout_marginLeft="8dp" />
+
+    <Spinner
+        android:id="@+id/spi_washroom"
+        android:layout_width="130dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="98dp"
+        android:layout_marginRight="8dp">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="বেলকনি/বারিন্দা সংখ্যা *"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        android:layout_marginLeft="16dp" />
+
+    <Spinner
+        android:id="@+id/spi_balkune_num"
+        android:layout_width="130dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="102dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        tools:ignore="MissingConstraints,UnknownId"
+        android:layout_marginLeft="11dp">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/floor_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="ফ্লাট কত তলাতে *"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        android:layout_marginLeft="20dp" />
+
+    <Spinner
+        android:id="@+id/spifloor_num"
+        android:layout_width="130dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toEndOf="@+id/floor_text"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        tools:ignore="MissingConstraints"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="87dp">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:text="স্পেশাল সুবিধাসমূহ *"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floor_text"
+        android:layout_marginLeft="4dp" />
+
+    //
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="WORK PROSODUR"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    //
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:background="#39AAAAAA"
+            android:ems="10"
+            android:hint="name"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_student_id"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:background="#39AAAAAA"
+            android:ems="10"
+            android:hint="student id"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_name"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/et_section"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:background="#39AAAAAA"
+            android:ems="10"
+            android:hint="section"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_student_id"
+            tools:ignore="MissingConstraints" />
+
+
+        <EditText
+            android:id="@+id/et_result"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:background="#39AAAAAA"
+            android:ems="10"
+            android:hint="result"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_section" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="300dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="16dp"
+            android:textColor="#002B99"
+            android:paddingLeft="5dp"
+            android:text="Select your Department:"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_result"
+            tools:ignore="MissingConstraints" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.276"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="MissingConstraints">
+
+            <RadioButton
+                android:id="@+id/red_EEE"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="  EEE"
+                android:textSize="18dp" />
+
+
+            <RadioButton
+                android:id="@+id/red_IT"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="  IT"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/red_SWE"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="  SWE"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/red_CSE"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="  CSE"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/red_CVEL"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="  CVEL"
+                android:textSize="18dp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_Semester"
+            android:layout_width="300dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="12dp"
+            android:text="Choose your Semester:"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textColor="#002B99"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            tools:ignore="MissingConstraints" />
+
+        <Spinner
+            android:id="@+id/spi_semester"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:entries="@array/selectsemester"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_Semester"
+            tools:ignore="MissingConstraints">
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="save"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spi_semester"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/show_list"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="12dp"
+            android:text="Show list"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/save" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+
+
+
+
+
+

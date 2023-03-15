@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Student Result</string>
+
+    <string-array name="selectsemester">
+
+        <item>Spring-18</item>
+        <item>Summer-18</item>
+        <item>Fall-18</item>
+        <item>Spring-19</item>
+        <item>Summer-19</item>
+        <item>Fall-19</item>
+        <item>Spring-20</item>
+        <item>Summer-20</item>
+        <item>Fall-20</item>
+        <item>Spring-21</item>
+        <item>Summer-21</item>
+        <item>Fall-21</item>
+
+    </string-array>
+</resources>
